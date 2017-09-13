@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%; }
+
+h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-variant-caps: all;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: center; }
+  h1 span {
+    font-variant: small-caps;
+    font-weight: 400; }
+
+h2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+  font-size: 1.75em;
+  text-align: center;
+  font-weight: 700; }
+  h2 span {
+    font-family: "Josefin Slab", serif;
+    font-variant: normal;
+    font-weight: 400; }
+
+body {
+  /* Treated image in Illustrator preferred */
+  /*background:linear-gradient(
+      rgba(204, 0, 255, 0.75),
+      rgba(204, 0, 255, 0.75)
+    ), url("../img/laptopDeskCodeMono.jpg");*/
+  background: url("../img/laptopDeskCodeFiltered.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; }
+
+.header {
+  overflow: auto;
+  min-height: 20vh;
+  width: 100%;
+  background: black; }
+  .header .header--container__text h1 {
+    margin: 4em 0 3em; }
+
+.middle {
+  overflow: auto;
+  min-height: 80vh;
+  margin-top: -1px;
+  margin-bottom: -1px; }
+  .middle:before {
+    content: "";
+    border-right: calc(100vw) solid black;
+    border-top: 15px solid black;
+    border-bottom: calc(13.5vw) solid transparent;
+    margin-top: -1px; }
+  .middle:after {
+    content: "";
+    border-left: calc(100vw) solid black;
+    border-bottom: 15px solid black;
+    border-top: calc(13.5vw) solid transparent;
+    margin-bottom: -1px; }
+  .middle .middle--container {
+    padding: 4em 0; }
+    .middle .middle--container .middle--container__text {
+      padding: 2em 0; }
+
+footer {
+  overflow: auto;
+  min-height: 20vh;
+  color: white;
+  background: black; }
+  footer .footer--container {
+    text-align: center; }
+
+@media only screen and (min-device-width: 820px) {
+  .middle--container {
+    padding: 6em 0; }
+    .middle--container .middle--container__text {
+      padding: 2em 0; } }
+
+/*# sourceMappingURL=main.css.map */

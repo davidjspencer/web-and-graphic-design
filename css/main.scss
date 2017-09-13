@@ -1,0 +1,114 @@
+$josefin: 'Josefin Slab', serif;
+$raleway: 'Raleway', sans-serif;
+$header: white;
+$titles: white;
+$angle: 13.5deg;
+$header-color: black;
+
+html,
+body {
+	height: 100%;
+
+}
+
+h1 {
+	color: $header;
+	font-family: $raleway;
+	font-variant-caps: all;
+	font-weight: 700;
+	font-size: 1.25em;
+	text-align: center;
+	span {
+		font-variant: small-caps;
+		font-weight: 400;
+	}
+}
+h2 {
+	color: $titles;
+	font-family: $raleway;
+	font-variant: small-caps;
+	font-size: 1.75em;
+	text-align: center;
+	font-weight: 700;
+	span {
+		font-family: $josefin;
+		font-variant: normal;
+		font-weight: 400;
+	}
+
+}
+body{
+/* Treated image in Illustrator preferred */
+  /*background:linear-gradient(
+      rgba(204, 0, 255, 0.75),
+      rgba(204, 0, 255, 0.75)
+    ), url("../img/laptopDeskCodeMono.jpg");*/
+  background: url("../img/laptopDeskCodeFiltered.png");
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	position: relative;
+
+}
+.header {
+	overflow: auto;
+	min-height: 20vh;
+	width: 100%;
+	background: $header-color;
+	.header--container__text {
+		h1 {
+			margin: 4em 0 3em;
+		}
+	}
+}
+
+.middle {
+	overflow: auto;
+	min-height: 80vh;
+	margin-top: -1px;
+	margin-bottom: -1px;
+
+	&:before {
+		content: "";
+		border-right: calc(100vw) solid $header-color;
+ 		border-top: 15px solid $header-color;
+ 		border-bottom: calc(13.5vw) solid transparent;
+ 		margin-top: -1px;
+	}
+	&:after {
+		content: "";
+		border-left: calc(100vw) solid $header-color;
+ 		border-bottom: 15px solid $header-color;
+ 		border-top: calc(13.5vw) solid transparent;
+ 		margin-bottom: -1px;
+	}
+
+	.middle--container {
+
+		padding: 4em 0;
+		.middle--container__text {
+			padding: 2em 0;
+		}
+	}
+
+}
+footer {
+	overflow: auto;
+	min-height: 20vh;
+	color: $header;
+	background: $header-color;
+	.footer--container {
+		text-align: center;
+	}
+}
+@media only screen and (min-device-width : 820px)  {
+
+	.middle--container {
+
+		padding: 6em 0;
+		.middle--container__text {
+			padding: 2em 0;
+		}
+	}
+}
