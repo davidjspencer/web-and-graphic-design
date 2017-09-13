@@ -33,7 +33,7 @@ body {
     ), url("../img/laptopDeskCodeMono.jpg");*/ }
 
 .header {
-  overflow: auto;
+  overflow: hidden;
   min-height: 20vh;
   width: 100%;
   background: black; }
@@ -44,7 +44,7 @@ hr {
   transform: rotate(13.5deg); }
 
 .middle {
-  overflow: auto;
+  overflow: hidden;
   clear: both;
   margin-top: -2px;
   margin-bottom: -2px;
@@ -71,7 +71,7 @@ hr {
       padding: 2em 0; }
 
 footer {
-  overflow: auto;
+  overflow: hidden;
   min-height: 20vh;
   color: white;
   background: black; }
@@ -80,8 +80,7 @@ footer {
 
 @media only screen and (min-device-width: 820px) {
   .middle {
-    overflow: visible;
-    /* quick fix */ }
+    overflow: hidden !important; }
 
   footer {
     /*display: none;  NOT DISPAYED */ } }

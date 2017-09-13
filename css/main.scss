@@ -47,7 +47,7 @@ body{
 
 }
 .header {
-	overflow: auto;
+	overflow: hidden;
 	min-height: 20vh;
 	width: 100%;
 	background: $header-color;
@@ -61,7 +61,7 @@ hr {
         transform: rotate($angle);
      }
 .middle {
-	overflow: auto;
+	overflow: hidden;
 	clear: both;
 
 	margin-top: -2px;
@@ -98,7 +98,7 @@ hr {
 
 }
 footer {
-	overflow: auto;
+	overflow: hidden;
 	min-height: 20vh;
 	color: $header;
 	background: $header-color;
@@ -108,7 +108,8 @@ footer {
 }
 @media only screen and (min-device-width : 820px)  {
 	.middle {
-		overflow: visible; /* quick fix */
+
+		overflow: hidden !important;
 	}
 	.middle--container {
 
