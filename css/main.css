@@ -26,6 +26,13 @@ h2 {
     font-variant: normal;
     font-weight: 400; }
 
+a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; }
+  a:hover {
+    border-bottom: 2px solid #cc00ff; }
+
 body {
   /* Treated image in Illustrator preferred */
   /*background:linear-gradient(
@@ -97,10 +104,15 @@ hr {
 footer {
   overflow: hidden;
   color: white;
-  background: black; }
+  background: black;
+  padding: 3em 0 4em; }
   footer .footer--container {
     text-align: center;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Josefin Slab", serif;
+    font-size: 1em; }
+  footer i.fa.fa-twitter,
+  footer i.material-icons {
+    font-size: 1.25em; }
 
 @media only screen and (min-device-width: 820px) {
   body {
@@ -142,7 +154,8 @@ footer {
   footer {
     background: transparent;
     position: absolute;
-    bottom: 1em;
+    padding: 0;
+    bottom: 2em;
     left: 50%;
     transform: translate(-50%, 0); } }
 

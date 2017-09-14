@@ -4,7 +4,7 @@ $header: white;
 $titles: white;
 $angle: 13.5deg;
 $header-color: black;
-
+$purple: rgb(204, 0, 255);
 html,
 body {
 	height: 100%;
@@ -37,7 +37,14 @@ h2 {
 		font-variant: normal;
 		font-weight: 400;
 	}
-
+}
+a {
+	color: $titles;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	&:hover {
+		border-bottom: 2px solid $purple;
+	}
 }
 body{
 /* Treated image in Illustrator preferred */
@@ -126,9 +133,15 @@ footer {
 	overflow: hidden;
 	color: $header;
 	background: $header-color;
+	padding: 3em 0 4em;
 	.footer--container {
 		text-align: center;
-		font-family: $raleway;
+		font-family: $josefin;
+		font-size: 1em;
+	}
+	i.fa.fa-twitter,
+	i.material-icons {
+		font-size: 1.25em;
 	}
 }
 @media only screen and (min-device-width : 820px)  {
@@ -181,7 +194,8 @@ footer {
 	footer {
 		background: transparent;
 		position: absolute;
-		bottom: 1em;
+		padding: 0;
+		bottom: 2em;
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
